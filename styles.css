@@ -296,6 +296,12 @@ img {
   box-shadow: var(--shadow);
 }
 
+.card-actions {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 16px;
+}
+
 .card.compact {
   text-align: center;
 }
@@ -712,7 +718,7 @@ img {
 
   .footer-inner {
     display: grid;
-    grid-template-columns: repeat(5, minmax(0, 1fr));
+    grid-template-columns: 20% 15% 15% 30% 20%;
     align-items: start;
     gap: 16px;
   }

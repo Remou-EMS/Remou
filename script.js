@@ -51,3 +51,21 @@ if (privacyTabs.length && privacyPanels.length) {
     });
   });
 }
+
+const termsTabs = document.querySelectorAll("[data-terms-tab]");
+const termsPanels = document.querySelectorAll("[data-terms-panel]");
+
+if (termsTabs.length && termsPanels.length) {
+  termsTabs.forEach((tab) => {
+    tab.addEventListener("click", () => {
+      const target = tab.getAttribute("data-terms-tab");
+
+      termsTabs.forEach((btn) => btn.classList.remove("is-active"));
+      tab.classList.add("is-active");
+
+      termsPanels.forEach((panel) => {
+        panel.classList.toggle("is-active", panel.getAttribute("data-terms-panel") === target);
+      });
+    });
+  });
+}

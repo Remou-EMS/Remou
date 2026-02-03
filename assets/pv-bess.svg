@@ -1,0 +1,67 @@
+<svg width="520" height="520" viewBox="0 0 520 520" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect x="0.5" y="0.5" width="519" height="519" rx="24" fill="#10161F" stroke="#243044"/>
+
+  <!-- Solar panel -->
+  <g transform="translate(40 20)">
+    <circle cx="50" cy="30" r="16" fill="#86F3DF" fill-opacity="0.7"/>
+    <path d="M50 6v-8M50 54v8M26 30h-8M74 30h8M33 13l-6-6M67 47l6 6M33 47l-6 6M67 13l6-6" stroke="#86F3DF" stroke-width="2" stroke-linecap="round"/>
+    <g stroke="#86F3DF" stroke-width="2" fill="#141C28">
+      <polygon points="30,100 170,70 200,130 60,160"/>
+    </g>
+    <defs>
+      <clipPath id="panel-clip-combined">
+        <polygon points="30,100 170,70 200,130 60,160"/>
+      </clipPath>
+    </defs>
+    <g clip-path="url(#panel-clip-combined)" stroke="#86F3DF" stroke-width="2">
+      <line x1="30" y1="115" x2="195" y2="80" stroke-opacity="0.55"/>
+      <line x1="30" y1="135" x2="185" y2="100" stroke-opacity="0.55"/>
+      <line x1="30" y1="150" x2="195" y2="115" stroke-opacity="0.55"/>
+      <line x1="75" y1="95" x2="110" y2="165" stroke-opacity="0.35"/>
+      <line x1="120" y1="86" x2="150" y2="152" stroke-opacity="0.35"/>
+    </g>
+  </g>
+
+  <!-- Factory -->
+  <g transform="translate(150 156)">
+    <rect x="20" y="70" width="200" height="90" rx="10" fill="#141C28" stroke="#243044" stroke-width="2"/>
+    <polygon points="20,90 70,60 100,90 140,60 170,90 220,70 220,110 20,110" fill="#141C28" stroke="#243044" stroke-width="2"/>
+    <rect x="40" y="118" width="36" height="28" rx="4" fill="#0B0F14" stroke="#243044"/>
+    <rect x="90" y="118" width="36" height="28" rx="4" fill="#0B0F14" stroke="#243044"/>
+    <rect x="140" y="118" width="36" height="28" rx="4" fill="#0B0F14" stroke="#243044"/>
+    <rect x="190" y="48" width="16" height="32" rx="4" fill="#141C28" stroke="#243044"/>
+  </g>
+
+  <!-- Battery -->
+  <g transform="translate(150 360)">
+    <rect x="12" y="26" width="176" height="88" rx="14" fill="#141C28" stroke="#243044" stroke-width="2"/>
+    <rect x="188" y="56" width="18" height="28" rx="6" fill="#243044"/>
+    <rect x="32" y="44" width="120" height="12" rx="6" fill="#86F3DF" fill-opacity="0.7"/>
+    <rect x="32" y="64" width="90" height="10" rx="5" fill="#7CEBB1" fill-opacity="0.6"/>
+    <rect x="32" y="82" width="60" height="10" rx="5" fill="#7CEBB1" fill-opacity="0.45"/>
+    <path d="M150 60h20" stroke="#86F3DF" stroke-width="3" stroke-linecap="round"/>
+    <path d="M160 50v20" stroke="#86F3DF" stroke-width="3" stroke-linecap="round"/>
+  </g>
+
+  <!-- Grid post -->
+  <g transform="translate(360 80)">
+    <g stroke="#86F3DF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M70 20v120"/>
+      <path d="M40 45h60"/>
+      <path d="M32 70h76"/>
+      <path d="M45 95h50"/>
+    </g>
+    <g stroke="#7CEBB1" stroke-width="3" stroke-linecap="round">
+      <path d="M40 45l-14 10"/>
+      <path d="M100 45l14 10"/>
+      <path d="M32 70l-14 10"/>
+      <path d="M108 70l14 10"/>
+    </g>
+    <circle cx="70" cy="140" r="8" fill="#7CEBB1" fill-opacity="0.8"/>
+  </g>
+
+  <!-- Smooth connections -->
+  <path d="M280 220 C210 195, 240 185, 170 165" stroke="#86F3DF" stroke-opacity="0.6" stroke-width="3" stroke-linecap="round"/>
+  <path d="M260 320 C260 340, 270 350, 250 380" stroke="#86F3DF" stroke-opacity="0.6" stroke-width="3" stroke-linecap="round"/>
+  <path d="M370 280 C390 250, 380 220, 420 220" stroke="#7CEBB1" stroke-opacity="0.45" stroke-width="3" stroke-linecap="round"/>
+</svg>
