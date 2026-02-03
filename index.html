@@ -1,67 +1,409 @@
 <!doctype html>
-<html lang="nl">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title> Remou — Coming soon</title>
-  <meta name="description" content="Ninove Remouchamps — Coming soon" />
-  <style>
-    html, body { height: 100%; margin: 0; font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; }
-    .hero {
-      min-height: 100%;
-      display: grid;
-      place-items: center;
-      position: relative;
-      color: #fff;
-      text-align: center;
-      padding: 24px;
-      background: #111;
-      overflow: hidden;
-    }
-    .hero::before{
-      content:"";
-      position:absolute; inset:0;
-      background: url("IMG_0203.jpeg") center/cover no-repeat;
-      filter: brightness(0.55);
-      transform: scale(1.02);
-    }
-    .content{
-      position: relative;
-      max-width: 820px;
-      width: 100%;
-    }
-    h1{ margin: 0 0 10px; font-size: clamp(28px, 4vw, 48px); letter-spacing: .5px; }
-    p{ margin: 0 0 18px; font-size: clamp(16px, 2vw, 20px); opacity: .95; }
-    .badge{
-      display:inline-block;
-      padding: 8px 14px;
-      border: 1px solid rgba(255,255,255,.35);
-      border-radius: 999px;
-      backdrop-filter: blur(6px);
-      background: rgba(0,0,0,.25);
-      font-size: 14px;
-      margin-top: 10px;
-    }
-    .contact{
-      margin-top: 22px;
-      font-size: 14px;
-      opacity: .9;
-    }
-    .contact a{ color:#fff; }
-  </style>
-</head>
-<body>
-  <main class="hero">
-    <section class="content" aria-label="Coming soon">
-      <h1>Remou</h1>
-      <p>Coming soon.</p>
-      <div class="badge">Website in opbouw</div>
-
-      <!-- Optioneel: contact -->
-      <div class="contact">
-        Contact: <a href="mailto:info@remou.be">info@remou.be</a>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Remou | Energy Management for Distributed Assets</title>
+    <meta
+      name="description"
+      content="Remou connects and optimizes distributed energy assets with a vendor-neutral edge and cloud platform."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Spline+Sans:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="logo" href="index.html" aria-label="Remou home">
+          <img src="Remou_Full_Logo.png" alt="Remou" />
+        </a>
+        <button class="menu-toggle" type="button" aria-expanded="false" data-menu-toggle>
+          Menu
+        </button>
+        <nav class="site-nav" data-menu data-open="false">
+          <a href="index.html">Home</a>
+          <a href="platform.html">Platform</a>
+          <a href="company.html">Company</a>
+          <a href="contact.html">Contact</a>
+          <a class="btn small" href="contact.html">Get in touch</a>
+        </nav>
       </div>
-    </section>
-  </main>
-</body>
+    </header>
+
+    <main>
+      <section class="hero grid-bg">
+        <div class="hero-content container hero-grid">
+          <div class="hero-copy">
+            <div class="pill">Vendor-neutral energy control</div>
+            <h1>
+              A secure, open, modular energy management system for distributed assets.
+            </h1>
+            <p class="lead">
+              Industrial sites and residential communities are installing PV, BESS, EV chargers,
+              and flexible loads fast. Remou coordinates these assets through a hybrid edge-cloud
+              platform built to minimize operational disruption and support site-specific
+              configuration.
+            </p>
+            <div class="hero-actions">
+              <a class="btn" href="contact.html">Talk to the team</a>
+              <a class="btn ghost" href="platform.html">Explore the platform</a>
+            </div>
+            <div class="hero-stats">
+              <div>
+                <span class="stat">Hybrid</span>
+                <span class="stat-label">Edge + cloud control</span>
+              </div>
+              <div>
+                <span class="stat">Open</span>
+                <span class="stat-label">Vendor-agnostic protocols</span>
+              </div>
+              <div>
+                <span class="stat">Secure</span>
+                <span class="stat-label">NIS2-aligned design</span>
+              </div>
+            </div>
+          </div>
+          <div class="hero-visual">
+            <!-- <img src="assets/hero-abstract.svg" alt="" /> -->
+            <img src="assets/ai-gen-infra.jpg" alt="Industrial energy infrastructure and control systems." />
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="section-header">
+            <div class="pill warning">The challenge</div>
+            <h2>The energy transition’s hidden problem.</h2>
+            <p>
+              Solar, BESS, EV charging and flexible loads often operate in isolation,
+              leading to curtailment, poor timing, and missed flexibility opportunities.
+            </p>
+          </div>
+          <div class="cards two">
+            <div class="card">
+              <h3>Disconnected control</h3>
+              <p>Assets are run independently without unified setpoints or visibility.</p>
+            </div>
+            <div class="card">
+              <h3>Static schedules</h3>
+              <p>Charging and discharging can miss optimal windows.</p>
+            </div>
+            <div class="card">
+              <h3>Vendor lock-in</h3>
+              <p>Closed EMS platforms limit integration and innovation.</p>
+            </div>
+            <div class="card">
+              <h3>Limited market access</h3>
+              <p>Flexibility services are difficult to access with rigid systems.</p>
+            </div>
+          </div>
+          <blockquote class="quote-block">
+            <p>
+              Across recent studies, structured energy management in C&amp;I sites is associated with
+              energy performance improvements ranging from low single-digit annual gains to 20%+
+              in advanced cases, depending on implementation maturity, data availability, and the
+              use of controllable assets—underscoring the value typically left unrealized in
+              unmanaged operations.
+            </p>
+            <div class="quote-sources">
+              <div>
+                <span class="muted">Study A</span>
+                <a href="https://www.sciencedirect.com/science/article/abs/pii/S0313592625001237" target="_blank" rel="noopener noreferrer">
+                  ISO 50001 certification and energy intensity reduction in manufacturing firms, Energy Economics, Elsevier, 2024.
+                </a>
+              </div>
+              <div>
+                <span class="muted">Study B</span>
+                <a href="https://www.sciencedirect.com/science/article/pii/S2213138823002734" target="_blank" rel="noopener noreferrer">
+                  Kanneganti, R. et al., Energy performance improvement through ISO 50001–based energy management systems, Energy Policy, Elsevier, 2023.
+                </a>
+              </div>
+            </div>
+          </blockquote>
+        </div>
+      </section>
+
+      <section class="section alt">
+        <div class="container">
+          <div class="section-header">
+            <div class="pill">The solution</div>
+            <h2>Secure, open, and modular by design.</h2>
+            <p>
+              Remou delivers local industrial intelligence, cloud-based coordination,
+              vendor-agnostic protocols, and configurable strategies.
+            </p>
+          </div>
+          <div class="cards two">
+            <div class="card">
+              <h3>Local industrial intelligence</h3>
+              <p>Deterministic on-site control on hardened edge hardware.</p>
+            </div>
+            <div class="card">
+              <h3>Cloud-based aggregation</h3>
+              <p>Portfolio coordination and analytics across multiple sites.</p>
+            </div>
+            <div class="card">
+              <h3>Vendor-agnostic drivers</h3>
+              <p>OPC UA, Modbus TCP, IEC 60870-5-104, and other open integrations.</p>
+            </div>
+            <div class="card">
+              <h3>Safe updates</h3>
+              <p>OTA updates designed to minimize disruption with rollback support.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="section-header">
+            <div class="pill">Architecture</div>
+            <h2>Cloud-integrated edge EMS.</h2>
+            <p>
+              A hybrid architecture connects field devices to cloud intelligence while
+              keeping critical control logic on-site. The design is grounded in
+              cybersecurity principles including network segmentation, secure communications,
+              and controlled update pathways.
+            </p>
+          </div>
+          <div class="arch-split">
+            <div>
+              <div class="architecture">
+                <div class="arch-layer">
+                  <span class="arch-label">Cloud coordination</span>
+                  <p>Forecasting, portfolio analytics, secure APIs, and reporting.</p>
+                </div>
+                <div class="arch-layer">
+                  <span class="arch-label">Edge control</span>
+                  <p>Local dispatch, constraint enforcement, and deterministic logic.</p>
+                </div>
+                <div class="arch-layer">
+                  <span class="arch-label">Physical assets</span>
+                  <p>PV, batteries, EV charging, CHP, flexible loads.</p>
+                </div>
+              </div>
+              <div class="badge-row">
+                <span class="badge">mTLS security</span>
+                <span class="badge">NIS2-ready</span>
+                <span class="badge">Blue-green deploys</span>
+                <span class="badge">Audit logging</span>
+                <span class="badge">European-based hardware and cloud</span>
+              </div>
+            </div>
+            <div class="arch-image">
+              <img
+                src="EMS_Remou_Architecture.png"
+                alt="Remou architecture diagram showing cloud coordination, edge control, and connected assets."
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section alt">
+        <div class="container">
+          <div class="section-header">
+            <div class="pill">Optimization</div>
+            <h2>Optimisation strategies that can be configured per site.</h2>
+            <p>
+              Strategies are configurable based on asset capabilities, site constraints,
+              and applicable market participation.
+            </p>
+          </div>
+          <div class="cards three">
+            <div class="card">
+              <h3>Customer strategies</h3>
+              <ul>
+                <li>Peak shaving</li>
+                <li>Self-consumption optimisation</li>
+                <li>Curtailment control</li>
+              </ul>
+            </div>
+            <div class="card">
+              <h3>Grid services</h3>
+              <ul>
+                <li>Flexibility markets</li>
+                <li>aFRR, FCR, mFRR</li>
+                <li>Day-ahead scheduling</li>
+              </ul>
+            </div>
+            <div class="card">
+              <h3>Planning and insights</h3>
+              <ul>
+                <li>Forecasting</li>
+                <li>Constraint awareness</li>
+                <li>Anomaly detection</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="section-header">
+            <div class="pill">Portfolio</div>
+            <h2>Scale from a single site to a full portfolio.</h2>
+            <p>
+              Portfolio coordination supports aggregated analysis and controlled dispatch
+              while preserving local autonomy.
+            </p>
+          </div>
+          <div class="cards two">
+            <div class="card">
+              <h3>Lightweight gateway</h3>
+              <p>Forward selected data for cloud coordination and analytics.</p>
+            </div>
+            <div class="card">
+              <h3>Portfolio visibility</h3>
+              <p>Cross-site performance, capacity usage, and congestion insights.</p>
+            </div>
+            <div class="card">
+              <h3>Community orchestration</h3>
+              <p>Coordinate energy flows across residential or mixed-use clusters.</p>
+            </div>
+            <div class="card">
+              <h3>Built for growth</h3>
+              <p>Integrates with commercial and billing systems rather than replacing them.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section alt">
+        <div class="container">
+          <div class="section-header">
+            <div class="pill">EV Infrastructure</div>
+            <h2>EV charging orchestration without disrupting operations.</h2>
+            <p>
+              The EMS coordinates EV charging alongside PV and storage, supporting
+              congestion-aware control and capacity tariff optimisation.
+            </p>
+          </div>
+          <div class="ev-split">
+            <div class="ev-visual" aria-hidden="true">
+              <img src="assets/ev-charger.svg" alt="" />
+            </div>
+            <div class="cards two">
+              <div class="card">
+                <h3>Priority-based charging</h3>
+                <p>Allocate power based on site constraints and operator rules.</p>
+              </div>
+              <div class="card">
+                <h3>Grid-aware throttling</h3>
+                <p>Respond to DSO constraints through IEC 60870-5-104 integration.</p>
+              </div>
+              <div class="card">
+                <h3>Site-level limits</h3>
+                <p>Respect import/export limits while keeping chargers available.</p>
+              </div>
+              <div class="card">
+                <h3>Multi-asset coordination</h3>
+                <p>Optimize EV charging with PV and BESS strategies per site.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="section-header">
+            <div class="pill">Roadmap</div>
+            <h2>Future-ready and modular by design.</h2>
+            <p>Planned extensions aligned with regulatory and customer needs.</p>
+          </div>
+          <div class="timeline">
+            <div class="timeline-item">
+              <h3>Expanded protocol support</h3>
+              <p>Additional industrial standards and integration pathways.</p>
+            </div>
+            <div class="timeline-item">
+              <h3>New asset classes</h3>
+              <p>Heat pumps, HVAC, industrial loads, and thermal storage.</p>
+            </div>
+            <div class="timeline-item">
+              <h3>Advanced optimisation</h3>
+              <p>Improved forecasting and AI-assisted scheduling.</p>
+            </div>
+            <div class="timeline-item">
+              <h3>Market expansion</h3>
+              <p>Broader European market coverage and regulatory alignment.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="section-header">
+            <div class="pill">Team</div>
+            <h2>Built by operators and engineers.</h2>
+            <p>We focus on reliability, integration speed, and real-world results.</p>
+          </div>
+          <div class="cards four">
+            <div class="card compact">
+              <div class="avatar">JV</div>
+              <h3>Jeroen Van Wesemael</h3>
+              <p class="muted">Co-founder</p>
+            </div>
+            <div class="card compact">
+              <div class="avatar">WD</div>
+              <h3>Wouter Van De Wiele</h3>
+              <p class="muted">Co-founder</p>
+            </div>
+            <div class="card compact">
+              <div class="avatar">SV</div>
+              <h3>Steven Vriesacker</h3>
+              <p class="muted">Co-founder</p>
+            </div>
+            <div class="card compact">
+              <div class="avatar">NR</div>
+              <h3>Nick Remouchamps</h3>
+              <p class="muted">Co-founder</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section contact">
+          <div class="container contact-grid">
+            <div>
+              <div class="pill">Contact</div>
+              <h2>Ready to connect assets and unlock value?</h2>
+              <p>
+                Send a quick note and we will respond with the right technical contact.
+              </p>
+            </div>
+          <div class="contact-card">
+            <p class="muted">Email us</p>
+            <a class="btn" href="mailto:info@remou.be">info@remou.be</a>
+            <p class="muted small">We typically reply within 2 business days.</p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <span class="logo">
+          <img src="Remou_Logo_NoText.png" alt="Remou" />
+        </span>
+        <div class="footer-links">
+          <a href="platform.html">Platform</a>
+          <a href="company.html">Company</a>
+          <a href="contact.html">Contact</a>
+        </div>
+        <span class="muted">Copyright 2026 Remou. All rights reserved.</span>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
 </html>
