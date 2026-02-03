@@ -15,3 +15,39 @@ if (toggle && menu) {
     });
   });
 }
+
+const appliedTabs = document.querySelectorAll("[data-applied-tab]");
+const appliedPanels = document.querySelectorAll("[data-applied-panel]");
+
+if (appliedTabs.length && appliedPanels.length) {
+  appliedTabs.forEach((tab) => {
+    tab.addEventListener("click", () => {
+      const target = tab.getAttribute("data-applied-tab");
+
+      appliedTabs.forEach((btn) => btn.classList.remove("is-active"));
+      tab.classList.add("is-active");
+
+      appliedPanels.forEach((panel) => {
+        panel.classList.toggle("is-active", panel.getAttribute("data-applied-panel") === target);
+      });
+    });
+  });
+}
+
+const privacyTabs = document.querySelectorAll("[data-privacy-tab]");
+const privacyPanels = document.querySelectorAll("[data-privacy-panel]");
+
+if (privacyTabs.length && privacyPanels.length) {
+  privacyTabs.forEach((tab) => {
+    tab.addEventListener("click", () => {
+      const target = tab.getAttribute("data-privacy-tab");
+
+      privacyTabs.forEach((btn) => btn.classList.remove("is-active"));
+      tab.classList.add("is-active");
+
+      privacyPanels.forEach((panel) => {
+        panel.classList.toggle("is-active", panel.getAttribute("data-privacy-panel") === target);
+      });
+    });
+  });
+}

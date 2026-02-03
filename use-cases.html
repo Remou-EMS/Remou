@@ -1,0 +1,282 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Remou | Use Cases</title>
+    <meta name="description" content="Use cases and applied cases for the Remou platform." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Spline+Sans:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16.png" />
+    <link rel="icon" href="favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="logo" href="index.html" aria-label="Remou home">
+          <img src="Remou_Full_Logo.png" alt="Remou" />
+        </a>
+        <button class="menu-toggle" type="button" aria-expanded="false" data-menu-toggle>
+          Menu
+        </button>
+        <nav class="site-nav" data-menu data-open="false">
+          <a href="index.html">Home</a>
+          <a href="platform.html">Platform</a>
+          <a href="use-cases.html">Use Cases</a>
+          <a href="company.html">About</a>
+          <a class="btn small" href="contact.html">Get in touch</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="page-hero">
+        <div class="container">
+          <div class="pill">Use Cases</div>
+          <h1>Where Remou delivers measurable impact.</h1>
+          <p class="lead">
+            Typical scenarios the EMS can be configured for, plus applied cases that
+            package control logic, integrations, and operational workflows.
+          </p>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="section-header">
+            <h2>Use cases</h2>
+            <p>Typical scenarios where the EMS can be configured.</p>
+          </div>
+          <div class="cards two">
+            <div class="card">
+              <h3>Commercial and industrial sites</h3>
+              <p>Coordinate PV, batteries, and flexible loads within site limits.</p>
+            </div>
+            <div class="card">
+              <h3>Residential communities</h3>
+              <p>Coordinate EV charging and storage with portfolio insights.</p>
+            </div>
+            <div class="card">
+              <h3>Multi-site portfolios</h3>
+              <p>Shared optimisation strategies with local autonomy.</p>
+            </div>
+            <div class="card">
+              <h3>Grid services</h3>
+              <p>Support aggregator-led flexibility participation.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section alt">
+        <div class="container">
+          <div class="section-header">
+            <div class="pill">Applied Cases</div>
+            <h2>Operational solution blocks you can deploy.</h2>
+            <p>
+              These are specific applied cases (like EV Infrastructure) that can be
+              selected to view full-width content.
+            </p>
+          </div>
+          <div class="applied-tabs" role="tablist" aria-label="Applied cases">
+            <button type="button" class="use-case-tab is-active" data-applied-tab="ev-infra">EV Infrastructure</button>
+            <button type="button" class="use-case-tab" data-applied-tab="net-zero">Net Zero Energy Management</button>
+            <button type="button" class="use-case-tab" data-applied-tab="energy-trading">Energy Trading &amp; Flexibility</button>
+            <button type="button" class="use-case-tab" data-applied-tab="backup-power">Backup Power &amp; Continuity</button>
+          </div>
+          <div class="applied-panels">
+            <article class="applied-panel is-active" data-applied-panel="ev-infra">
+              <div class="applied-header">
+                <h3>EV Infrastructure</h3>
+                <span class="applied-tag">Grid-aware control</span>
+              </div>
+              <p>EV charging coordination with site limits, DSO constraints, and asset priorities.</p>
+              <div class="ev-split">
+                <div class="ev-visual" aria-hidden="true">
+                  <img src="assets/ev-charger.svg" alt="" />
+                </div>
+                <div class="cards two">
+                  <div class="card">
+                    <h3>Priority-based allocation</h3>
+                    <p>Setpoints account for site constraints and operator rules.</p>
+                  </div>
+                  <div class="card">
+                    <h3>Congestion-aware control</h3>
+                    <p>DSO RTU signals handled via IEC 60870-5-104 integration.</p>
+                  </div>
+                  <div class="card">
+                    <h3>Multi-asset orchestration</h3>
+                    <p>Coordinate EV charging alongside PV and storage.</p>
+                  </div>
+                  <div class="card">
+                    <h3>Site continuity</h3>
+                    <p>Local control remains deterministic when connectivity is degraded.</p>
+                  </div>
+                </div>
+              </div>
+            </article>
+            <article class="applied-panel" data-applied-panel="net-zero">
+              <div class="applied-header">
+                <h3>Net Zero Energy Management</h3>
+                <span class="applied-tag">Grid-aware control</span>
+              </div>
+              <p>Coordinate PV and battery storage to minimise grid imports and support net-zero operation.</p>
+              <div class="ev-split">
+                <div class="ev-visual" aria-hidden="true">
+                  <img src="assets/pv-bess.svg" alt="" />
+                </div>
+                <div class="cards two">
+                  <div class="card">
+                    <h3>Local energy balancing</h3>
+                    <p>PV production and battery dispatch aligned with on-site demand.</p>
+                  </div>
+                  <div class="card">
+                    <h3>Grid-limit compliance</h3>
+                    <p>Import and export limits enforced at the site connection point.</p>
+                  </div>
+                  <div class="card">
+                    <h3>Priority-based usage</h3>
+                    <p>Clean energy is consumed locally before curtailment or export.</p>
+                  </div>
+                  <div class="card">
+                    <h3>Deterministic fallback</h3>
+                    <p>Net-zero operation continues safely during connectivity loss.</p>
+                  </div>
+                </div>
+              </div>
+            </article>
+            <article class="applied-panel" data-applied-panel="energy-trading">
+              <div class="applied-header">
+                <h3>Energy Trading &amp; Flexibility</h3>
+                <span class="applied-tag">Aggregator-integrated control</span>
+              </div>
+              <p>Use surplus battery capacity to support energy trading while respecting site and grid constraints.</p>
+              <div class="ev-split">
+                <div class="ev-visual" aria-hidden="true">
+                  <img src="assets/energy-trading.svg" alt="" />
+                </div>
+                <div class="cards two">
+                  <div class="card">
+                    <h3>Secure asset exposure</h3>
+                    <p>BESS capacity made available to external aggregators, subject to configuration and constraints.</p>
+                  </div>
+                  <div class="card">
+                    <h3>Mode separation</h3>
+                    <p>Clear distinction between site optimisation and market-driven operation.</p>
+                  </div>
+                  <div class="card">
+                    <h3>Constraint-first execution</h3>
+                    <p>Trading actions always validated against site and grid limits.</p>
+                  </div>
+                  <div class="card">
+                    <h3>Local enforcement</h3>
+                    <p>Aggregator setpoints enforced on-site in real time.</p>
+                  </div>
+                </div>
+              </div>
+            </article>
+            <article class="applied-panel" data-applied-panel="backup-power">
+              <div class="applied-header">
+                <h3>Backup Power &amp; Continuity</h3>
+                <span class="applied-tag">Safety-first operation</span>
+              </div>
+              <p>Maintain power using batteries and local generation during grid outages or disturbances.</p>
+              <div class="ev-split">
+                <div class="ev-visual" aria-hidden="true">
+                  <img src="assets/backup-power.svg" alt="" />
+                </div>
+                <div class="cards two">
+                  <div class="card">
+                    <h3>Mode-aware control</h3>
+                    <p>Seamless transitions between grid-connected and islanded operation.</p>
+                  </div>
+                  <div class="card">
+                    <h3>Asset orchestration</h3>
+                    <p>Batteries, backup generation, and loads coordinated under one logic layer.</p>
+                  </div>
+                  <div class="card">
+                    <h3>Deterministic protection</h3>
+                    <p>Safety rules enforced locally without cloud dependency.</p>
+                  </div>
+                  <div class="card">
+                    <h3>Operator clarity</h3>
+                    <p>Explicit system states for normal, degraded, and emergency operation.</p>
+                  </div>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="section-header">
+            <div class="pill">Custom Development</div>
+            <h2>Tailored extensions on top of the Remou EMS.</h2>
+            <p>
+              We can build custom integrations, control logic, and reporting layers on top of
+              the core EMS to match your operational requirements, assets, and regulatory context.
+            </p>
+          </div>
+          <div class="cards two">
+            <div class="card">
+              <h3>Custom drivers</h3>
+              <p>Protocol adapters and device integrations tailored to your asset mix.</p>
+            </div>
+            <div class="card">
+              <h3>Site-specific strategies</h3>
+              <p>Control logic aligned with local constraints, tariffs, and policies.</p>
+            </div>
+            <div class="card">
+              <h3>Bespoke reporting</h3>
+              <p>Dashboards, exports, and KPIs that match your operational workflows.</p>
+            </div>
+            <div class="card">
+              <h3>System integration</h3>
+              <p>Connect the EMS with existing commercial or billing platforms.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <span class="footer-mark">
+          <img src="Remou_Logo_NoText.png" alt="Remou" />
+        </span>
+        <div class="footer-col">
+          <p>Kiezelweg 6<br />2560 Nijlen</p>
+          <p>BTW: Pending</p>
+        </div>
+        <div class="footer-col">
+          <p class="footer-title">Contact</p>
+          <p>Remou</p>
+          <p>+32 479 61 37 39</p>
+          <p><a href="mailto:info@remou.be">info@remou.be</a></p>
+        </div>
+        <div class="footer-links">
+          <a href="platform.html">Platform</a>
+          <a href="company.html">About</a>
+          <a href="contact.html">Contact</a>
+        </div>
+        <div class="footer-col footer-bottom">
+          <span class="footer-logo">
+            <img src="Remou_Full_Logo.png" alt="Remou" />
+          </span>
+          <span class="muted">Remou © 2026 - <a href="privacy.html">Privacy Notice</a></span>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js?v=2"></script>
+  </body>
+</html>
