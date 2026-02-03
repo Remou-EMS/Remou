@@ -422,6 +422,26 @@ img {
   }
 }
 
+@media (max-width: 700px) {
+  .site-header .logo {
+    height: 90px;
+  }
+
+  .site-header .logo img {
+    height: 220px;
+  }
+
+  .site-nav {
+    right: 16px;
+  }
+
+  .hero-visual img {
+    width: min(520px, 140%);
+    max-width: 140%;
+    transform: translateX(6%);
+  }
+}
+
 .arch-layer {
   padding: 20px 24px;
   border-radius: 14px;
